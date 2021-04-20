@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
 }
 
 .App-logo {
@@ -35,4 +37,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Row {
+  justify-content: space-evenly;
+  margin: 20px;
 }
