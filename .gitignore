@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/teamproject/node_modules
+/teamproject/.pnp
+/teamproject/.pnp.js
+
+# testing
+/teamproject/coverage
+
+# production
+/teamproject/build
+
+# misc
+/teamproject/.DS_Store
+/teamproject/.env.local
+/teamproject/.env.development.local
+/teamproject/.env.test.local
+/teamproject/.env.production.local
+
+/teamproject/npm-debug.log*
+/teamproject/yarn-debug.log*
+/teamproject/yarn-error.log*
