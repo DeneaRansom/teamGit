@@ -1,19 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import AppLoader from './components/AppLoader';
 import Main from './components/Main';
 import './App.css';
 
-
-function App() {
+const App = () => {
+  const [latitude, setLatitude] = useState("");
+  const [longitude, setLongitude] = useState("");
   const [isNasa, setIsNasa] = useState(false);
   const [isWeather, setIsWeather] = useState(false);
-  const [isResy, setIsResy] = useState(false);
+
+  useEffect(() => {
+    const getLocation = () => {
+      console.log("getLocation is firing");
+      navigator.geolocation.getCurrentPosition(showPosition);
+    };
+
+    const showPosition = (position) => {
+      console.log("Show position is firing");
+      setLatitude(position.coords.latitude);
+      setLongitude(position.coords.longitude);
+    };
+
+    getLocation();
+  }, []);
 
   return (
     <div className = 'App'>
-      <AppLoader setIsNasa = {setIsNasa} setIsWeather = {setIsWeather} setIsResy = {setIsResy}/>
+      <AppLoader setIsNasa = {setIsNasa} setIsWeather = {setIsWeather}/>
       <hr />
-      <Main isNasa = {isNasa} isWeather = {isWeather} isResy = {isResy}/>
+      <Main isNasa = {isNasa} isWeather = {isWeather}/>
     </div>
   );
 }
