@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState, } from "react"
 
 
 const Nasa = (props) => {
@@ -10,14 +10,13 @@ const Nasa = (props) => {
 
     const [imageSource, setImageSource] = useState("")
 
-    let url = `https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&dim=${dim}&date=${date}&api_key=${api_key}`;
-
-    //let url = "https://api.nasa.gov/planetary/earth/imagery?lon=-85.139236&lat=41.0793&dim=.25&date=2020-04-01&api_key=eWJ8epFCnbCbAKuiUQBUMprUoM3xWtWHaTZtTyaO"
-
-
-fetch(url)
-    .then(res => setImageSource(res.url))
-
+    if (lat && long) {
+        console.log("Will this keep running until the condish is met?");
+        let url = `https://api.nasa.gov/planetary/earth/imagery?lon=${long}&lat=${lat}&dim=${dim}&date=${date}&api_key=${api_key}`;
+        
+        fetch(url)
+        .then(res => setImageSource(res.url))
+    }
 
 
     return(
