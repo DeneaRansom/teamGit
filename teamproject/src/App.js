@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-import React from "react";
-=======
 import React, { useState, useEffect } from 'react';
 import AppLoader from './components/AppLoader';
 import Main from './components/Main';
->>>>>>> e8fe5b9332912a4b4680746681abcea2c443d7bf
 import './App.css';
 
 const App = () => {
