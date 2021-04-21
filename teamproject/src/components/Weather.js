@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import stormIcon from '../icons/storm.png';
 import partlyCloudyIcon from '../icons/partlyCloud.png';
@@ -93,3 +94,20 @@ return (
 
 
 export default Weather;  
+=======
+import React from 'react';
+
+function Weather(props) {
+    return(
+        <div>
+            <h1>Weather API</h1>
+            <div>Below is the longitude</div>
+            <div>{props.longitude}</div>
+            <div>Below is the latitude</div>
+            <div>{props.latitude}</div>
+        </div>
+    )
+}
+
+export default Weather;
+>>>>>>> 175a4e5725be1aec1e7d58c239b7dcaedf3a522a

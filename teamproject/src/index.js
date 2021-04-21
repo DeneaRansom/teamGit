@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+<<<<<<< HEAD
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+=======
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+>>>>>>> 175a4e5725be1aec1e7d58c239b7dcaedf3a522a
 
 ReactDOM.render(
   <React.StrictMode>
