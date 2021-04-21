@@ -43,3 +43,13 @@
   justify-content: space-evenly;
   margin: 20px;
 }
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+#tempIcon {
+  width: 250px;
+  height: auto;
+}

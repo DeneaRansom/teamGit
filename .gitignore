@@ -12,6 +12,7 @@
 /teamproject/build
 
 # misc
+.DS_Store
 /teamproject/.DS_Store
 /teamproject/.env.local
 /teamproject/.env.development.local
