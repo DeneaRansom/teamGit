@@ -41,10 +41,15 @@ const App = () => {
 
   return (
     <div className = 'App'>
-      <AppLoader setIsNasa = {setIsNasa} setIsWeather = {setIsWeather}/>
+      <AppLoader 
+        setIsNasa = {setIsNasa} 
+        setIsWeather = {setIsWeather}/>
       <hr />
-      <h3>{latitude} {longitude}</h3>
-      <Main isNasa = {isNasa} isWeather = {isWeather}/>
+      <Main 
+        isNasa = {isNasa} 
+        isWeather = {isWeather}
+        longitude = {longitude}
+        latitude = {latitude}/>
     </div>
   );
 }

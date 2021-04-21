@@ -1,9 +1,13 @@
 import React from 'react';
 
-function Weather() {
+function Weather(props) {
     return(
         <div>
-            This is Weather
+            <h1>Weather API</h1>
+            <div>Below is the longitude</div>
+            <div>{props.longitude}</div>
+            <div>Below is the latitude</div>
+            <div>{props.latitude}</div>
         </div>
     )
 }

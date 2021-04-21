@@ -7,9 +7,9 @@ const Main = (props) => {
     return(
         <div>
             {props.isNasa
-                ? <Nasa />
+                ? <Nasa longitude = {props.longitude} latitude = {props.latitude}/>
                 : props.isWeather
-                    ? <Weather />
+                    ? <Weather longitude = {props.longitude} latitude = {props.latitude}/>
                     : <></>
             }
         </div>
