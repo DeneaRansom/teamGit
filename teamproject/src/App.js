@@ -26,9 +26,15 @@ const App = () => {
 
   return (
     <div className = 'App'>
-      <AppLoader setIsNasa = {setIsNasa} setIsWeather = {setIsWeather}/>
+      <AppLoader 
+        setIsNasa = {setIsNasa} 
+        setIsWeather = {setIsWeather}/>
       <hr />
-      <Main isNasa = {isNasa} isWeather = {isWeather}/>
+      <Main 
+        isNasa = {isNasa} 
+        isWeather = {isWeather}
+        longitude = {longitude}
+        latitude = {latitude}/>
     </div>
   );
 }
